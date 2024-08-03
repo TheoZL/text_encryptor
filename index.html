@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text-Encryptor</title>
+    <script src="https://code.iconify.design/1/1.0/iconify.min.js"></script>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/responsive.css" />
+  </head>
+  <body>
+        <header>
+        <a>
+            <img class="logo" src="./assets/Logo Pequeno.png" />
+        </a>
+        </header>
+        <div class="container">
+            <main class="main_display">
+            <div class="conten_display_left">
+                <textarea onchange="lowercase(this)" id="inputText" class="content_title" rows="10" autofocus placeholder="Ingrese el texto aqui"></textarea>
+                </section>
+                <section>
+                <div class="content_bottom">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="1.5em"
+                    height="1.5em"
+                    viewBox="0 0 16 16"
+                    >
+                    <path
+                        fill="currentColor"
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2"
+                    />
+                    </svg>
+                    <p id="text_instructions" class="text_instructions">
+                    </p>
+                </div>
+                <div class="button_display">
+                    <button id="button_encrypting" onclick="encryptText()" class="button_encrypting">Encriptar</button>
+                    <button id="button_decrypt" onclick="decryptText()" class="button_decrypt">Desencriptar</button>
+                </div>
+                </section>
+            </div>
+            <div class="rectangle">
+                <div id="warning_container" class="rectangle_inside">
+                <img id="muneco_image"
+                    class="muneco_image"
+                    src="assets/positive.png"
+                    alt="imagen de busqueda"
+                    height="304"
+                    width="336"
+                />
+                <img id="muneco_image_negative"
+                    class="muneco_image"
+                    src="assets/negative.png"
+                    alt="imagen de busqueda"
+                    height="304"
+                    width="336"
+                    style="display: none;"
+                />
+                <h1 id="without_text" class="without_text"></h1>
+                <p id="insert_text" class="insert_text">
+                </p>
+                </div>
+                <div id="text_container" class="rectangle_answer" style="display: none;">
+                    <spam id="outputText" class="output_text" disabled></spam>
+                    <button id="copy_button" onclick="copytext()" class="copy_button">Copiar</button>
+                </div>
+            </div>
+            </main>
+        </div>    
+        <footer></footer>
+        <script src="JS/app.js"></script>
+    </body>
+</html>

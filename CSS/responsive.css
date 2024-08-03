@@ -1,0 +1,51 @@
+.container{
+    max-width: 2000px;
+    min-width: 300px;
+}
+
+@media (max-width: 1200px){
+    .main_display{
+        flex-direction: column;
+        padding: 0%, 0%;
+    }
+    .rectangle {
+        width: auto;
+        height: 100%;
+        margin: 5% 0% 0% 0%;
+    }
+    .muneco_image{
+        width: 50%;
+        height: 50%;
+
+    }
+    .copy_button{
+        width: 50%;
+        margin: 5% 0% 0% 0%;
+    }
+    .button_display{
+        width: 100%;
+        margin: 5% 0% 5% 0%;
+      }
+    .text_instructions{
+        margin: 5% 0% 5% 0%;
+    }
+    .logo{
+        width: auto;
+    }
+    .content_title{
+        font-size: 1rem;
+    }
+    .output_text{
+        font-size: 1rem;
+    }
+    .without_text{
+        font-size: 1rem;
+        width: 50%;
+    }
+    
+    .insert_text{
+        font-size: 1rem;
+        width: 50%;
+    }
+
+}
