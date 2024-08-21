@@ -4,6 +4,8 @@
 
 This project is a web-based tool for encrypting and decrypting text. It provides a simple interface for users to input text, encrypt it using specific character replacements, decrypt it back to the original text, and copy the encrypted text to the clipboard. The tool also provides visual feedback based on the input state, ensuring a user-friendly experience.
 
+You can check the tool here: https://text-encryptor-zeta.vercel.app/
+
 ## Features
 
 - **Text Encryption**: Replaces vowels with specific strings to create encrypted text.
